@@ -5,10 +5,10 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
   <ion-item *ngFor="let opcao of lista; let i = index">
     <ion-label [ngStyle]="{'font-size':'12px'}">#{{i}} - {{opcao.descricao}}</ion-label>
     <ion-checkbox checked={{opcao.selecionado}} (ionChange)="itemChange($event, i, opcao)" ></ion-checkbox>
   </ion-item>
+  <button full ion-button color="primary" (click)="gravar()">Gravar</button>
 </ion-content>

@@ -8,11 +8,13 @@ import { ListPage } from '../pages/list/list';
 import { AddItemPage } from '../pages/add-item-page/add-item-page';
 import { ItemDetailPage } from '../pages/item-detail-page/item-detail-page';
 import { CheckListPage } from '../pages/check-list-page/check-list-page';
+import { GeoPage } from '../pages/geo-page/geo-page';
 
 
 import {RepositorioService} from '../providers/repositorio-service';
 import {Storage} from '@ionic/storage';
 import {Dados} from '../providers/dados';
+import {RestService} from '../providers/rest-service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {Dados} from '../providers/dados';
     AddItemPage,
     ItemDetailPage,
     EmpresasPage,
-    CheckListPage
+    CheckListPage,
+    GeoPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -37,8 +40,9 @@ import {Dados} from '../providers/dados';
     AddItemPage,
     ItemDetailPage,
     EmpresasPage,
-    CheckListPage
+    CheckListPage,
+    GeoPage
   ],
-  providers: [RepositorioService, Storage, Dados]
+  providers: [RepositorioService, Storage, Dados, RestService]
 })
 export class AppModule {}

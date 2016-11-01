@@ -8,6 +8,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { EmpresasPage } from '../pages/empresas/empresas';
 import { CheckListPage } from '../pages/check-list-page/check-list-page';
+import { GeoPage } from '../pages/geo-page/geo-page';
 
 
 @Component({
@@ -31,7 +32,8 @@ export class MyApp {
       { title: 'Piloto', component: HelloIonicPage },
       { title: 'Listagem', component: ListPage },
       { title: 'Empresas', component: EmpresasPage },
-      { title: 'Check List', component: CheckListPage }
+      { title: 'Check List', component: CheckListPage },
+      { title: 'Geo', component: GeoPage }
     ];
   }
 

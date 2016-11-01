@@ -6,7 +6,7 @@ import {Injectable} from '@angular/core';
 export class RepositorioService {
 
   private local;
-  private codEmpresa;
+  //private codEmpresa;
   public variavel : string = "teste";
   public selecionouEmpresa : boolean = false;
   public codemp : number = -2
@@ -30,32 +30,11 @@ export class RepositorioService {
 
   getValue(item: String, callback){
 
-    let retorno = 'vazio';
     let dataPromise = this.local.get(item);
 
     dataPromise.then(data => {
       callback(data);
-      //retorno = data;
-      //alert('Na função: '+data);
     });
-
-    //return retorno;
-
-
-    //this.local.get(item).then( (value) => callback('itamar'));
-
-    /*
-    let retorno = 'not found';
-    let promise = this.local.get(item);
-    promise.then(function(value) {
-      //return value;
-      alert('O valor restaurado de item é '+value);
-      this.codEmpresa = value;
-    },
-    function(razao){
-      alert('problema '+razao);
-    });
-    */
   }
 
 
