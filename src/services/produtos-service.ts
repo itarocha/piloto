@@ -44,10 +44,10 @@ export class ProdutosService {
      makeDelete(): void {
        this.loading = true;
        this.http.delete('http://jsonplaceholder.typicode.com/posts/1')
-          .subscribe((res: Response) => {
-              this.data = res.json();
-              this.loading = false;
-            });
+                .subscribe((res: Response) => {
+                    this.data = res.json();
+                    this.loading = false;
+                  });
       }
 
 

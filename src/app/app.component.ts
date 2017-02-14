@@ -4,11 +4,11 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { StatusBar } from 'ionic-native';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
-import { EmpresasPage } from '../pages/empresas/empresas';
-import { CheckListPage } from '../pages/check-list-page/check-list-page';
-import { GeoPage } from '../pages/geo-page/geo-page';
+import { HomePage } from '../pages/default/home/home';
+import { ListPage } from '../pages/item/list/list';
+import { EmpresasPage } from '../pages/default/empresas/empresas';
+import { CheckListPage } from '../pages/default/check-list/check-list';
+import { GeoPage } from '../pages/default/geo/geo';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  rootPage: any = HomePage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -29,7 +29,7 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Piloto', component: HelloIonicPage },
+      { title: 'Home', component: HomePage },
       { title: 'Listagem', component: ListPage },
       { title: 'Empresas', component: EmpresasPage },
       { title: 'Check List', component: CheckListPage },

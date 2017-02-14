@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, ViewController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-add-item-page',
-  templateUrl: 'add-item-page.html'
+  selector: 'add-item',
+  templateUrl: 'add-item.html'
 })
 export class AddItemPage {
 

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-item-detail-page',
-  templateUrl: 'item-detail-page.html'
+  selector: 'item-detail',
+  templateUrl: 'item-detail.html'
 })
 export class ItemDetailPage {
 

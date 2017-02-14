@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HelloIonicPage } from '../../pages/hello-ionic/hello-ionic';
-import { RepositorioService } from '../../providers/repositorio-service';
-import { EmpresasService } from '../../services/empresas-service';
+import { HomePage } from '../../../pages/default/home/home';
+import { RepositorioService } from '../../../providers/repositorio-service';
+import { EmpresasService } from '../../../services/empresas-service';
 //import {ElasticHeader} from '../../directives/elastic-header';
 
 
@@ -41,7 +41,7 @@ export class EmpresasPage {
     this.rep.setNomEmp(nomemp);
 
     //this.nav.push(HomePage,{codemp: codemp});
-    this.nav.setRoot(HelloIonicPage,{codemp: codemp});
+    this.nav.setRoot(HomePage,{codemp: codemp});
   }
 
 

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HelloIonicPage } from '../../pages/hello-ionic/hello-ionic';
+import { HomePage } from '../../../pages/default/home/home';
 
 @Component({
-  selector: 'page-check-list-page',
-  templateUrl: 'check-list-page.html'
+  selector: 'check-list',
+  templateUrl: 'check-list.html'
 })
 export class CheckListPage {
 
@@ -38,7 +38,7 @@ export class CheckListPage {
     //
     // this.view.dismiss(newItem);
     console.log("Gravando...");
-    this.nav.setRoot(HelloIonicPage);
+    this.nav.setRoot(HomePage);
   }
 
 

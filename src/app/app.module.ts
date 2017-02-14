@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { EmpresasPage } from '../pages/empresas/empresas';
-import { ListPage } from '../pages/list/list';
-import { AddItemPage } from '../pages/add-item-page/add-item-page';
-import { ItemDetailPage } from '../pages/item-detail-page/item-detail-page';
-import { CheckListPage } from '../pages/check-list-page/check-list-page';
-import { GeoPage } from '../pages/geo-page/geo-page';
+import { HomePage } from '../pages/default/home/home';
+import { ItemDetailsPage } from '../pages/item/item-details/item-details';
+import { EmpresasPage } from '../pages/default/empresas/empresas';
+import { ListPage } from '../pages/item/list/list';
+
+import { AddItemPage } from '../pages/item/add-item/add-item';
+import { ItemDetailPage } from '../pages/item/item-detail/item-detail';
+import { CheckListPage } from '../pages/default/check-list/check-list';
+import { GeoPage } from '../pages/default/geo/geo';
 
 
 import {RepositorioService} from '../providers/repositorio-service';
@@ -19,7 +20,7 @@ import {RestService} from '../providers/rest-service';
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
+    HomePage,
     ItemDetailsPage,
     ListPage,
     AddItemPage,
@@ -34,7 +35,7 @@ import {RestService} from '../providers/rest-service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
+    HomePage,
     ItemDetailsPage,
     ListPage,
     AddItemPage,

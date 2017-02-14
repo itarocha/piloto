@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { Platform, ModalController, NavController } from 'ionic-angular';
-import { AddItemPage } from '../add-item-page/add-item-page'
-import { ItemDetailPage } from '../item-detail-page/item-detail-page';
-import { Dados } from '../../providers/dados';
-import { RestService } from '../../providers/rest-service'
 import { Network } from 'ionic-native';
 
+import { AddItemPage } from '../../item/add-item/add-item'
+import { ItemDetailPage } from '../../item/item-detail/item-detail';
+
+import { Dados } from '../../../providers/dados';
+import { RestService } from '../../../providers/rest-service'
+
 @Component({
-  templateUrl: 'hello-ionic.html'
+  templateUrl: 'home.html'
 })
-export class HelloIonicPage {
+export class HomePage {
 
   public items = [];
   public networkstatus : string;

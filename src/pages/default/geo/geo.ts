@@ -3,8 +3,8 @@ import { NavController } from 'ionic-angular';
 import { Geolocation } from 'ionic-native';
 
 @Component({
-  selector: 'page-geo-page',
-  templateUrl: 'geo-page.html'
+  selector: 'geo',
+  templateUrl: 'geo.html'
 })
 export class GeoPage {
 
