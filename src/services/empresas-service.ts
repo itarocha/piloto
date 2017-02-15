@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 //import {SERVER_URL} from './config';
 //import {Http, Headers, RequestOptions} from '@angular/http';
 //import {Http} from '@angular/http';
-import { Http, Response, RequestOptions, Headers } from '@angular/http';
+import { Http, Response } from '@angular/http';
 //import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
 
@@ -17,7 +17,7 @@ export class EmpresasService {
     constructor (private http:Http) {
     }
 
-    getEmpresas(codusu : number): void{
+    getEmpresas(codusu : number): any{
        this.http.get(SERVER_URL + "/api/empresas/config/"+codusu+"/empresas")
         .subscribe((res: Response) => {
             this.data = res.json();
